@@ -16,7 +16,11 @@ def multiply(num1, num2):
     """This will produce the multiplication of two numbers"""
     
     result = num1 * num2
-    print(f'Result is {result}')
+    if num2 == 0:
+        print("Can't divide a number by zero")
+    else:
+        print(f'Result is {result}')
+
 
 def divide(num1, num2):
     """This will produce the division of two numbers"""
