@@ -17,7 +17,7 @@ def multiply(num1, num2):
     
     result = num1 * num2
     if num2 == 0:
-        print("Can't divide a number by zero")
+        print("You can't divide a number by zero")
     else:
         print(f'Result is {result}')
 
