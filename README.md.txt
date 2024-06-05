@@ -28,13 +28,3 @@ A simple command-line calculator that can perform addition, subtraction, multipl
 
 3. Follow the on-screen instructions to perform calculations.
 
-## Functions
-
-### add(num1, num2)
-This function takes two numbers and prints their sum.
-
-```python
-def add(num1, num2):
-    """This will produce the sum of two numbers"""
-    result = num1 + num2
-    print(f'Result is {result}')
