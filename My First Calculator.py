@@ -16,18 +16,17 @@ def multiply(num1, num2):
     """This will produce the multiplication of two numbers"""
     
     result = num1 * num2
-    if num2 == 0:
-        print("You can't divide a number by zero")
-    else:
-        print(f'Result is {result}')
+    print(f'Result is {result}')
 
 
 def divide(num1, num2):
     """This will produce the division of two numbers"""
-    
-    result = num1/num2
-    print(f'Result is {result}')
-    
+        
+    try:
+        result = num1 / num2
+        print(f'Result is {result}')
+    except ZeroDivisionError:
+        print("You can't divide a number by zero")
 
 def main():
     print("Welcome to Simple Calculator. ")
@@ -44,10 +43,14 @@ def main():
         
         if choice == '5':
             break
-        
-        
-        num1 = int(input("enter the first digit:  "))
-        num2 = int(input("enter the second digit:  "))
+
+        try:
+            num1 = float(input("Enter the first number: "))
+            num2 = float(input("Enter the second number: "))
+        except ValueError:
+            print("Invalid input. Please enter numeric values.")
+           
+            continue
         
         if choice == '1':
             add(num1, num2)
